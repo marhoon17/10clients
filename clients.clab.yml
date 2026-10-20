@@ -1,0 +1,90 @@
+name: ten-clients
+
+topology:
+  nodes:
+    # Define the bridge node (references the bridge created in step 1)
+    br-clab:
+      kind: bridge
+
+    # Define 10 client nodes using a loop-like pattern
+    client1:
+      kind: linux
+      image: alpine:latest
+      exec:
+        - ip addr add 10.0.0.11/24 dev eth1
+        - ip link set eth1 up
+    client2:
+      kind: linux
+      image: alpine:latest
+      exec:
+        - ip addr add 10.0.0.12/24 dev eth1
+        - ip link set eth1 up
+   
+    client3:
+      kind: linux
+      image: alpine:latest
+      exec:
+        - ip addr add 10.0.0.13/24 dev eth1
+        - ip link set eth1 up
+ 
+    client4:
+      kind: linux
+      image: alpine:latest
+      exec:
+        - ip addr add 10.0.0.14/24 dev eth1
+        - ip link set eth1 up
+
+    client5:
+      kind: linux
+      image: alpine:latest
+      exec:
+        - ip addr add 10.0.0.15/24 dev eth1
+        - ip link set eth1 up
+
+    client6:
+      kind: linux
+      image: alpine:latest
+      exec:
+        - ip addr add 10.0.0.16/24 dev eth1
+        - ip link set eth1 up
+
+    client7:
+      kind: linux
+      image: alpine:latest
+      exec:
+        - ip addr add 10.0.0.17/24 dev eth1
+        - ip link set eth1 up
+  
+    client8:
+      kind: linux
+      image: alpine:latest
+      exec:
+        - ip addr add 10.0.0.18/24 dev eth1
+        - ip link set eth1 up
+
+    client9:
+      kind: linux
+      image: alpine:latest
+      exec:
+        - ip addr add 10.0.0.19/24 dev eth1
+        - ip link set eth1 up
+
+
+    client10:
+      kind: linux
+      image: alpine:latest
+      exec:
+        - ip addr add 10.0.0.20/24 dev eth1
+        - ip link set eth1 up
+
+  links:
+    - endpoints: ["client1:eth1", "br-clab:eth1"]
+    - endpoints: ["client2:eth1", "br-clab:eth2"]
+    - endpoints: ["client3:eth1", "br-clab:eth3"]
+    - endpoints: ["client4:eth1", "br-clab:eth4"]
+    - endpoints: ["client5:eth1", "br-clab:eth5"]
+    - endpoints: ["client6:eth1", "br-clab:eth6"]
+    - endpoints: ["client7:eth1", "br-clab:eth7"]
+    - endpoints: ["client8:eth1", "br-clab:eth8"]
+    - endpoints: ["client9:eth1", "br-clab:eth9"]
+    - endpoints: ["client10:eth1", "br-clab:eth10"]

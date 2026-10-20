@@ -1,0 +1,66 @@
+# ─────────────────────────────────────────────────────────
+# Containerlab runtime artifacts
+# ─────────────────────────────────────────────────────────
+clab-*/
+*.clab.yml.bak
+
+# Containerlab inspection / graph output
+*.graph.json
+*.topo.json
+
+# Packet captures and logs
+*.pcap
+*.pcapng
+*.log
+*.txt~
+
+# ─────────────────────────────────────────────────────────
+# Docker / container state
+# ─────────────────────────────────────────────────────────
+docker-compose.override.yml
+
+# ─────────────────────────────────────────────────────────
+# Secrets — never commit these
+# ─────────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+id_rsa*
+credentials*
+
+# ─────────────────────────────────────────────────────────
+# OS / editor noise
+# ─────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ─────────────────────────────────────────────────────────
+# Python / tooling (if you add helper scripts later)
+# ─────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# ─────────────────────────────────────────────────────────
+# Terraform / Ansible (common with network labs)
+# ─────────────────────────────────────────────────────────
+.terraform/
+*.tfstate*
+*.tfvars
+ansible/*.retry
+
+# ─────────────────────────────────────────────────────────
+# Node modules (if you add web tooling)
+# ─────────────────────────────────────────────────────────
+node_modules/

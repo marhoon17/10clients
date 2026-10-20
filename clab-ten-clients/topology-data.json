@@ -1,0 +1,527 @@
+{
+  "name": "ten-clients",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "clab",
+        "bridge": "br-418e55425309",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "3fff:172:20:20::/64",
+        "ipv6-gw": "3fff:172:20:20::1",
+        "external-access": true,
+        "ipam": {
+          "provider": "containerlab"
+        }
+      }
+    }
+  },
+  "ssh-pub-keys": ["ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBHvD+aAJ22/QsqpZX7JdSAd3+Jw9ggFWbBfHZgE3evH5+AoA9vITH4FEUnKS3BI1yg2mCJoof7eGrpEARZrYRzs="],
+  "nodes": {
+    "br-clab": {
+      "index": "0",
+      "shortname": "br-clab",
+      "longname": "clab-ten-clients-br-clab",
+      "fqdn": "br-clab.ten-clients.io",
+      "group": "",
+      "labdir": "/home/clab/vnet/clab-ten-clients/br-clab",
+      "kind": "bridge",
+      "image": "",
+      "mgmt-net": "clab",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "",
+      "mgmt-ipv4-prefix-length": 0,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-418e55425309",
+        "clab-node-group": "",
+        "clab-node-kind": "bridge",
+        "clab-node-lab-dir": "/home/clab/vnet/clab-ten-clients/br-clab",
+        "clab-node-longname": "clab-ten-clients-br-clab",
+        "clab-node-name": "br-clab",
+        "clab-node-type": "",
+        "clab-owner": "clab",
+        "clab-topo-file": "/home/clab/vnet/clients.clab.yml",
+        "containerlab": "ten-clients"
+      },
+      "port-bindings": [
+      ]
+    },
+    "client1": {
+      "index": "1",
+      "shortname": "client1",
+      "longname": "clab-ten-clients-client1",
+      "fqdn": "client1.ten-clients.io",
+      "group": "",
+      "labdir": "/home/clab/vnet/clab-ten-clients/client1",
+      "kind": "linux",
+      "image": "alpine:latest",
+      "mgmt-net": "clab",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.17",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::11",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-418e55425309",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/clab/vnet/clab-ten-clients/client1",
+        "clab-node-longname": "clab-ten-clients-client1",
+        "clab-node-name": "client1",
+        "clab-node-type": "",
+        "clab-owner": "clab",
+        "clab-topo-file": "/home/clab/vnet/clients.clab.yml",
+        "containerlab": "ten-clients"
+      },
+      "port-bindings": [
+      ]
+    },
+    "client10": {
+      "index": "2",
+      "shortname": "client10",
+      "longname": "clab-ten-clients-client10",
+      "fqdn": "client10.ten-clients.io",
+      "group": "",
+      "labdir": "/home/clab/vnet/clab-ten-clients/client10",
+      "kind": "linux",
+      "image": "alpine:latest",
+      "mgmt-net": "clab",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.12",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::c",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-418e55425309",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/clab/vnet/clab-ten-clients/client10",
+        "clab-node-longname": "clab-ten-clients-client10",
+        "clab-node-name": "client10",
+        "clab-node-type": "",
+        "clab-owner": "clab",
+        "clab-topo-file": "/home/clab/vnet/clients.clab.yml",
+        "containerlab": "ten-clients"
+      },
+      "port-bindings": [
+      ]
+    },
+    "client2": {
+      "index": "3",
+      "shortname": "client2",
+      "longname": "clab-ten-clients-client2",
+      "fqdn": "client2.ten-clients.io",
+      "group": "",
+      "labdir": "/home/clab/vnet/clab-ten-clients/client2",
+      "kind": "linux",
+      "image": "alpine:latest",
+      "mgmt-net": "clab",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.18",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::12",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-418e55425309",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/clab/vnet/clab-ten-clients/client2",
+        "clab-node-longname": "clab-ten-clients-client2",
+        "clab-node-name": "client2",
+        "clab-node-type": "",
+        "clab-owner": "clab",
+        "clab-topo-file": "/home/clab/vnet/clients.clab.yml",
+        "containerlab": "ten-clients"
+      },
+      "port-bindings": [
+      ]
+    },
+    "client3": {
+      "index": "4",
+      "shortname": "client3",
+      "longname": "clab-ten-clients-client3",
+      "fqdn": "client3.ten-clients.io",
+      "group": "",
+      "labdir": "/home/clab/vnet/clab-ten-clients/client3",
+      "kind": "linux",
+      "image": "alpine:latest",
+      "mgmt-net": "clab",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.13",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::d",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-418e55425309",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/clab/vnet/clab-ten-clients/client3",
+        "clab-node-longname": "clab-ten-clients-client3",
+        "clab-node-name": "client3",
+        "clab-node-type": "",
+        "clab-owner": "clab",
+        "clab-topo-file": "/home/clab/vnet/clients.clab.yml",
+        "containerlab": "ten-clients"
+      },
+      "port-bindings": [
+      ]
+    },
+    "client4": {
+      "index": "5",
+      "shortname": "client4",
+      "longname": "clab-ten-clients-client4",
+      "fqdn": "client4.ten-clients.io",
+      "group": "",
+      "labdir": "/home/clab/vnet/clab-ten-clients/client4",
+      "kind": "linux",
+      "image": "alpine:latest",
+      "mgmt-net": "clab",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.14",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::e",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-418e55425309",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/clab/vnet/clab-ten-clients/client4",
+        "clab-node-longname": "clab-ten-clients-client4",
+        "clab-node-name": "client4",
+        "clab-node-type": "",
+        "clab-owner": "clab",
+        "clab-topo-file": "/home/clab/vnet/clients.clab.yml",
+        "containerlab": "ten-clients"
+      },
+      "port-bindings": [
+      ]
+    },
+    "client5": {
+      "index": "6",
+      "shortname": "client5",
+      "longname": "clab-ten-clients-client5",
+      "fqdn": "client5.ten-clients.io",
+      "group": "",
+      "labdir": "/home/clab/vnet/clab-ten-clients/client5",
+      "kind": "linux",
+      "image": "alpine:latest",
+      "mgmt-net": "clab",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.19",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::13",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-418e55425309",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/clab/vnet/clab-ten-clients/client5",
+        "clab-node-longname": "clab-ten-clients-client5",
+        "clab-node-name": "client5",
+        "clab-node-type": "",
+        "clab-owner": "clab",
+        "clab-topo-file": "/home/clab/vnet/clients.clab.yml",
+        "containerlab": "ten-clients"
+      },
+      "port-bindings": [
+      ]
+    },
+    "client6": {
+      "index": "7",
+      "shortname": "client6",
+      "longname": "clab-ten-clients-client6",
+      "fqdn": "client6.ten-clients.io",
+      "group": "",
+      "labdir": "/home/clab/vnet/clab-ten-clients/client6",
+      "kind": "linux",
+      "image": "alpine:latest",
+      "mgmt-net": "clab",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.20",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::14",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-418e55425309",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/clab/vnet/clab-ten-clients/client6",
+        "clab-node-longname": "clab-ten-clients-client6",
+        "clab-node-name": "client6",
+        "clab-node-type": "",
+        "clab-owner": "clab",
+        "clab-topo-file": "/home/clab/vnet/clients.clab.yml",
+        "containerlab": "ten-clients"
+      },
+      "port-bindings": [
+      ]
+    },
+    "client7": {
+      "index": "8",
+      "shortname": "client7",
+      "longname": "clab-ten-clients-client7",
+      "fqdn": "client7.ten-clients.io",
+      "group": "",
+      "labdir": "/home/clab/vnet/clab-ten-clients/client7",
+      "kind": "linux",
+      "image": "alpine:latest",
+      "mgmt-net": "clab",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.15",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::f",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-418e55425309",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/clab/vnet/clab-ten-clients/client7",
+        "clab-node-longname": "clab-ten-clients-client7",
+        "clab-node-name": "client7",
+        "clab-node-type": "",
+        "clab-owner": "clab",
+        "clab-topo-file": "/home/clab/vnet/clients.clab.yml",
+        "containerlab": "ten-clients"
+      },
+      "port-bindings": [
+      ]
+    },
+    "client8": {
+      "index": "9",
+      "shortname": "client8",
+      "longname": "clab-ten-clients-client8",
+      "fqdn": "client8.ten-clients.io",
+      "group": "",
+      "labdir": "/home/clab/vnet/clab-ten-clients/client8",
+      "kind": "linux",
+      "image": "alpine:latest",
+      "mgmt-net": "clab",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.16",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::10",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-418e55425309",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/clab/vnet/clab-ten-clients/client8",
+        "clab-node-longname": "clab-ten-clients-client8",
+        "clab-node-name": "client8",
+        "clab-node-type": "",
+        "clab-owner": "clab",
+        "clab-topo-file": "/home/clab/vnet/clients.clab.yml",
+        "containerlab": "ten-clients"
+      },
+      "port-bindings": [
+      ]
+    },
+    "client9": {
+      "index": "10",
+      "shortname": "client9",
+      "longname": "clab-ten-clients-client9",
+      "fqdn": "client9.ten-clients.io",
+      "group": "",
+      "labdir": "/home/clab/vnet/clab-ten-clients/client9",
+      "kind": "linux",
+      "image": "alpine:latest",
+      "mgmt-net": "clab",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.21",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::15",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-418e55425309",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/clab/vnet/clab-ten-clients/client9",
+        "clab-node-longname": "clab-ten-clients-client9",
+        "clab-node-name": "client9",
+        "clab-node-type": "",
+        "clab-owner": "clab",
+        "clab-topo-file": "/home/clab/vnet/clients.clab.yml",
+        "containerlab": "ten-clients"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "endpoints": {
+        "a": {
+          "node": "client1",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:fc:63:0c",
+          "peer": "z"
+        },
+        "z": {
+          "node": "br-clab",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:50:d4:d4",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "client2",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:4a:09:04",
+          "peer": "z"
+        },
+        "z": {
+          "node": "br-clab",
+          "interface": "eth2",
+          "mac": "aa:c1:ab:67:5a:fc",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "client3",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:11:8e:ed",
+          "peer": "z"
+        },
+        "z": {
+          "node": "br-clab",
+          "interface": "eth3",
+          "mac": "aa:c1:ab:e1:e9:7c",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "client4",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:ba:32:0f",
+          "peer": "z"
+        },
+        "z": {
+          "node": "br-clab",
+          "interface": "eth4",
+          "mac": "aa:c1:ab:cb:17:03",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "client5",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:70:63:86",
+          "peer": "z"
+        },
+        "z": {
+          "node": "br-clab",
+          "interface": "eth5",
+          "mac": "aa:c1:ab:55:10:79",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "client6",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:36:d4:bd",
+          "peer": "z"
+        },
+        "z": {
+          "node": "br-clab",
+          "interface": "eth6",
+          "mac": "aa:c1:ab:11:fe:16",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "client7",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:df:0a:3c",
+          "peer": "z"
+        },
+        "z": {
+          "node": "br-clab",
+          "interface": "eth7",
+          "mac": "aa:c1:ab:20:49:19",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "client8",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:11:57:3b",
+          "peer": "z"
+        },
+        "z": {
+          "node": "br-clab",
+          "interface": "eth8",
+          "mac": "aa:c1:ab:cb:56:ae",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "client9",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:91:5e:ae",
+          "peer": "z"
+        },
+        "z": {
+          "node": "br-clab",
+          "interface": "eth9",
+          "mac": "aa:c1:ab:75:a2:cb",
+          "peer": "a"
+        }
+      }
+    },
+    {
+      "endpoints": {
+        "a": {
+          "node": "client10",
+          "interface": "eth1",
+          "mac": "aa:c1:ab:7f:25:c2",
+          "peer": "z"
+        },
+        "z": {
+          "node": "br-clab",
+          "interface": "eth10",
+          "mac": "aa:c1:ab:8f:a7:f4",
+          "peer": "a"
+        }
+      }
+    }
+  ]
+}
